@@ -15,7 +15,7 @@ function Sidebar() {
   return (
     <div className='sidebar'>
       <TwitterIcon />
-      <SidebarOption text='Home' Icon={HomeIcon} />
+      <SidebarOption active text='Home' Icon={HomeIcon} />
       <SidebarOption text='Explore' Icon={SearchIcon} />
       <SidebarOption text='Notification' Icon={NotificationsNoneIcon} />
       <SidebarOption text='Messages' Icon={MailOutlineIcon} />
