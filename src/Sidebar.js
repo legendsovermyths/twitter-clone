@@ -10,6 +10,7 @@ import ListIcon from "@material-ui/icons/List";
 import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import Button from "@material-ui/core/Button";
 
 function Sidebar() {
   return (
@@ -23,6 +24,9 @@ function Sidebar() {
       <SidebarOption text='List' Icon={ListIcon} />
       <SidebarOption text='Profile' Icon={PermIdentityIcon} />
       <SidebarOption text='More' Icon={MoreHorizIcon} />
+      <Button variant='outlined' className='sidebar__tweet' fullWidth>
+        Tweet
+      </Button>
     </div>
   );
 }
