@@ -9,8 +9,12 @@ function TweetBox() {
         <div className='tweetBox__input'>
           <Avatar src='https://wallpaperaccess.com/full/814594.jpg' />
           <input type='text' placeholder="What's happening?" />
-          {/* <input type='text' placeholder='Enter image url' /> */}
         </div>
+        <input
+          className='tweetBox__imageInput'
+          type='text'
+          placeholder='Optional:Enter Image URL'
+        />
         <Button className='tweetBox__tweetButton'>Tweet</Button>
       </form>
     </div>
