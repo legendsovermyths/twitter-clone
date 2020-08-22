@@ -1,10 +1,27 @@
 import React from "react";
 import "./Widget.css";
-
+import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterTweetEmbed,
+} from "react-twitter-embed";
 function Widget() {
   return (
-    <div className='widget'>
-      <h2>Widget</h2>
+    <div className='widgets'>
+      <div className='widgets__input'>
+        <SearchRoundedIcon className='widgets__searchIcon' />
+        <input placeholder='Search Twitter' type='text' />
+      </div>
+      <div className='widgets__widgetsContainer'>
+        <h2>What's happening</h2>
+        <TwitterTweetEmbed tweetId={"1296884788809400320"} />
+        <TwitterTimelineEmbed
+          sourceType='profile'
+          screenName='GoogleIndia'
+          options={{ height: 400 }}
+        />
+      </div>
     </div>
   );
 }

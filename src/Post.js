@@ -20,7 +20,7 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
               Levi
               <span className='post__headerSpecial'>
                 <VerifiedUserIcon className='post__badge' />
-                @LeviWithoutTitans
+                {" @LeviWithoutTitans"}
               </span>
             </h3>
           </div>
