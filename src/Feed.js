@@ -24,6 +24,7 @@ function Feed() {
       <TweetBox />
       {posts.map(({ id, post }) => (
         <Post
+          userName={post.userName}
           avatar={post.avatar}
           verified={post.verified}
           postId={id}

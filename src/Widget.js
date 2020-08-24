@@ -1,11 +1,7 @@
 import React from "react";
 import "./Widget.css";
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
-import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterTweetEmbed,
-} from "react-twitter-embed";
+import { TwitterTimelineEmbed, TwitterTweetEmbed } from "react-twitter-embed";
 function Widget() {
   return (
     <div className='widgets'>
