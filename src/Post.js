@@ -11,13 +11,13 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
   return (
     <div className='post'>
       <div className='post__avatar'>
-        <Avatar src='https://img.wallpapersafari.com/desktop/1680/1050/79/9/wRrpnW.jpg'></Avatar>
+        <Avatar src={avatar}></Avatar>
       </div>
       <div className='post__body'>
         <div className='post__header'>
           <div className='post__headerText'>
             <h3>
-              Levi
+              {displayName}
               <span className='post__headerSpecial'>
                 <VerifiedUserIcon className='post__badge' />
                 {" @LeviWithoutTitans"}
@@ -25,14 +25,10 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
             </h3>
           </div>
           <div className='post__headerDescription'>
-            <p>I will defeat all the titans!!!</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          className='post__img'
-          src='https://media0.giphy.com/media/S0zHxjax3DbJm/giphy.gif?cid=ecf05e47wusrm81unnx9ucr2pa4c3scn9zfnuod68awser2y&rid=giphy.gif'
-          alt=''
-        />
+        <img className='post__img' src={image} alt='' />
         <div className='post__footer'>
           <ChatBubbleOutlineOutlinedIcon fontSize='small'></ChatBubbleOutlineOutlinedIcon>
           <RepeatOutlinedIcon fontSize='small'></RepeatOutlinedIcon>
