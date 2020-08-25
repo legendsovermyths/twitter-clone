@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Avatar, Button } from "@material-ui/core";
 import "./TweetBox.css";
 import { db } from "./firebase";
+import firebase from "firebase";
 
 function TweetBox() {
   const [tweetMessage, setTweetMessage] = useState("");
@@ -9,6 +10,7 @@ function TweetBox() {
   const sendTweet = (e) => {
     e.preventDefault();
     db.collection("posts").add({
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       displayName: "L",
       userName: "@LtheLegend",
       verified: true,
